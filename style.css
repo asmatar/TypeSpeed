@@ -62,11 +62,19 @@ body {
   align-items: flex-start;
   row-gap: 1rem;
 }
-.our-text{
+.text-to-test{
+  background-color: transparent;
+  resize: none;
+  color: #FFF;
   border: 2px solid rgb(85, 85, 85);
   width: 550px;
   height: 130px;
+  outline: none;
+}
+.text-to-test:focus {
+  border-color: #e79b32d7;
 }
 .text-to-write{
   margin-bottom: 5rem;
+  width: 550px;
 }
