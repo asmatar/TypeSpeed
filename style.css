@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #f09819,
+    #edde5d
+  );
+  font-family: Roboto, Helvetica, sans-serif;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app{
+  background-color: rgb(28, 27, 27);
+  color: #FFF;
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .6rem;
+  border-radius: 6px;
+}
+.title{
+  font-family: roboto;
+  margin-top: 1.5rem;
+}
+.echap {
+  background-color: rgb(246, 64, 64);
+  padding: .1rem .4rem;
+}
+.info{
+  color: rgba(228, 228, 228, 0.893);
+}
+.cta{
+  display: flex;
+  column-gap: .8rem;
+  margin-top: .7rem;
+}
+.timer, .score {
+  padding: .3rem 1.3rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.timer{
+  background: linear-gradient(90deg, rgba(29, 29, 29, 1) 0%, rgb(45, 45, 45) 100%);
+}
+.score{
+  background: linear-gradient(270deg, rgb(29, 29, 29) 0%, rgb(45, 45, 45) 100%);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+.our-text{
+  border: 2px solid rgb(85, 85, 85);
+  width: 550px;
+  height: 130px;
+}
+.text-to-write{
+  margin-bottom: 5rem;
+}
