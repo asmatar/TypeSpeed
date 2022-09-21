@@ -6,7 +6,7 @@ let currentScore = document.querySelector(".current-score")
 const timerDiv = document.querySelector(".timer")
 const scoreDiv = document.querySelector(".score")
 let ApiContent = {};
-let timer = 8
+let timer = 50
 let score = 0
 
 
@@ -45,14 +45,12 @@ decreaseTime()
 const compareString = (event) => {
   userText = event.target.value
   userTextLength = event.target.value.length
-  //console.log("value.length",event.target.value.length )
-  console.log("textToTest.value", userText)
+  //console.log("textToTest.value", userText)
 
   /* textToTest.length */
   //console.log("text test length", ApiContent.lengthApiSentence)
   testToVerify = ApiContent.ApiSentence.slice(0,userTextLength)
-  console.log("text test length", testToVerify)
-
+  //console.log("text test length", testToVerify)
   if (userText === testToVerify) {
   /*   console.log("textToWrite", textToWrite.textContent.slice(0, 2))
     let colorText = textToWrite.textContent.slice(0, 2)
@@ -61,13 +59,27 @@ const compareString = (event) => {
       return
     }
     currentScore.innerHTML = score++
-  } else {
+  }
+    console.log("userText", userText)
+    console.log("testToVerify", testToVerify)
+    console.log("ApiContent.lengthApiSentence", ApiContent.lengthApiSentence)
+    console.log("userText.Length", userTextLength)
+    console.log("first")
+
+  if (userText === testToVerify && userTextLength === ApiContent.lengthApiSentence) {
+    console.log("userText", userText)
+    console.log("testToVerify", testToVerify)
+    console.log("userText.Length", userText.Length)
+    console.log("first")
+    textToTest.textContent = ""
+    textToTest.value = ""
+    getNewSentence()
   }
 }
 
 const resetGame = (event) => {
   if (event.keyCode === 27) {
-    timer = 10;
+    timer = 50;
     score = 0
     currentScore.innerHTML = score;
     textToTest.textContent = ""
