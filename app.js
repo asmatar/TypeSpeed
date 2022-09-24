@@ -45,32 +45,17 @@ decreaseTime()
 const compareString = (event) => {
   userText = event.target.value
   userTextLength = event.target.value.length
-  //console.log("textToTest.value", userText)
-
-  /* textToTest.length */
-  //console.log("text test length", ApiContent.lengthApiSentence)
   testToVerify = ApiContent.ApiSentence.slice(0,userTextLength)
-  //console.log("text test length", testToVerify)
+
   if (userText === testToVerify) {
-  /*   console.log("textToWrite", textToWrite.textContent.slice(0, 2))
-    let colorText = textToWrite.textContent.slice(0, 2)
-    colorText.style.color = "red" */
     if (timer === 0) {
       return
     }
-    currentScore.innerHTML = score++
+    score++
+    currentScore.innerHTML = score
   }
-    console.log("userText", userText)
-    console.log("testToVerify", testToVerify)
-    console.log("ApiContent.lengthApiSentence", ApiContent.lengthApiSentence)
-    console.log("userText.Length", userTextLength)
-    console.log("first")
 
   if (userText === testToVerify && userTextLength === ApiContent.lengthApiSentence) {
-    console.log("userText", userText)
-    console.log("testToVerify", testToVerify)
-    console.log("userText.Length", userText.Length)
-    console.log("first")
     textToTest.textContent = ""
     textToTest.value = ""
     getNewSentence()

@@ -79,3 +79,11 @@ body {
   margin-bottom: 4rem;
   width: 550px;
 }
+.correct {
+  color: #000;
+  background-color: #0ecf0e;
+}
+.wrong {
+  color: #FFF;
+  background: crimson;
+}

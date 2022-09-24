@@ -30,7 +30,4 @@
 
 ### C. Ajoutez du style à l'interface afin de terminer le projet.
 
-
-- al final de la farse change by another one fetch api
-
 - background have to change when you write text
