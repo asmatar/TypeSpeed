@@ -19,7 +19,9 @@ A nice game that allows you to measure your typing speed over one minute.
 # Tecnologies
 
 • Vanilla JavaScript 
+
 • CSS 
+
 • HTML
 
 # Launch
