@@ -13,6 +13,7 @@ let score = 0
 const getNewSentence = async () => {
   try {
     let response = await fetch(APIEndpoint)
+    if (!response.ok) throw Error()
     let result =  await response.json()
     ApiContent.lengthApiSentence = result.length
     ApiContent.ApiSentence = result.content
@@ -25,6 +26,7 @@ const getNewSentence = async () => {
 const displayContent = (ApiContent) => {
   textToWrite.textContent = ApiContent.ApiSentence;
 }
+
 const decreaseTime = () => {
   time.innerText = timer
   if (timer === 0) {
